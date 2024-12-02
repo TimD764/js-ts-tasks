@@ -7,3 +7,4 @@
 module.exports.hasProperty = function hasProperty(object, prop) {
   return prop in object;
 };
+// sdfasdfasdfg
