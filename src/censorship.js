@@ -14,5 +14,29 @@
  * @returns {function}
  */
 module.exports.censorship = function censorship(forbidden) {
-  throw new Error('Not implemented'); // remove me and write a solution
+  const lowerForbidden = forbidden.map(word => word.toLowerCase());
+
+  return function (str) {
+    const lowerStr = str.toLowerCase();
+
+    for (let i = 0; i < lowerForbidden.length; i++) {
+      const word = lowerForbidden[i];
+      let index = lowerStr.indexOf(word);
+
+      while (index !== -1) {
+        const replacement = '*'.repeat(word.length);
+        str = str.slice(0, index) + replacement + str.slice(index + word.length);
+        index = lowerStr.indexOf(word, index + word.length);
+      }
+    }
+    return str;
+  };
 };
+
+
+
+
+
+
+
+
