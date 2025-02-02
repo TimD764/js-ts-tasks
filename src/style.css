@@ -3,3 +3,143 @@
 body {
   background: linear-gradient(45deg, #FFD6C3, #FCB5FF, #BEC6FF);
 }
+
+p,a{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin: 0;
+  text-decoration: none;
+}
+
+.iphone-container-user{
+  padding: 62px 18px 0px 18px;
+  position: relative;
+}
+
+.iphone-container-photos{
+  padding: 0px 10px 0px 10px;
+  position: relative;
+}
+
+.iphone-top-bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iphone-profile{
+  margin: 18px 0px;
+  display: flex;
+}
+
+.iphone-userinfo{
+  margin: 26px 0px 26px 15px;
+  display: flex;
+}
+
+.iphone-specialinfo{
+  text-align: center;
+}
+
+.iphone-specialinfomargin{
+  margin: 0px 27px;
+}
+
+.iphone-additional-info{
+  margin-top: 18px;
+  margin-bottom: 25px;
+}
+
+.iphone-control-buttons{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0px;
+}
+
+.iphone-control-button{
+  width: 112px;
+  height: 33px;
+  background-color: black;
+  border: 1px solid #343434;
+  border-radius: 5px;
+  color:white;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 6px;
+}
+
+#button-highlight{
+  background-color: #4192EF;
+  border: none;
+}
+
+.iphone-highlights{
+  display: flex;
+  margin:16px 0px;
+}
+
+.iphone-highlight{
+  text-align: center;
+  margin-right: 10px;
+}
+
+.iphone-highlight-image{
+  width: 60px;
+}
+
+.iphone-highlight-t{
+  font-size: 14px;
+}
+
+.iphone-tabbar{
+  display: flex;
+  height: 50px;
+  border-top: 1px solid #262626;
+  margin-bottom: 5px;
+}
+
+.iphone-tab-selected{
+  border-bottom: 2px solid white;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iphone-tab-unselected{
+  width: 50%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.iphone-gallery{
+  display: inline-block;
+  z-index: -1;
+}
+
+.iphone-imagefix{
+  width: 32%;
+  margin: 0;
+  padding: 0;
+}
+
+.iphone-tabmenu{
+  background-color: black;
+  width: 263px;
+  height:90px;
+  position: sticky;
+  bottom: 0;
+  z-index: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 13px 36px;
+}
+body {
+  background: linear-gradient(45deg, #FFD6C3, #FCB5FF, #BEC6FF);
+}
