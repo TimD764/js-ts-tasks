@@ -5,6 +5,27 @@
  * @param {string|number} word
  * @returns {boolean}
  */
-module.exports.pangram = function (word: string | number): boolean {
-  throw new Error('Not implemented'); // delete this line and write your code
-};
+module.exports.pangram = function (input: string | number): boolean {
+  if (typeof input === 'string') {
+      const lowercaseInput = input.toLowerCase();
+      const alphabet = new Set('abcdefghijklmnopqrstuvwxyz');
+      for (const char of lowercaseInput) {
+          alphabet.delete(char);
+          if (alphabet.size === 0) {
+              return true;
+          }
+      }
+      return false;
+  } else if (typeof input === 'number') {
+      const digits = new Set('0123456789');
+      const inputStr = input.toString();
+      for (const char of inputStr) {
+          digits.delete(char);
+          if (digits.size === 0) {
+              return true;
+          }
+      }
+      return false;
+  }
+  return false;
+}
